@@ -64,12 +64,13 @@
     "uri-js": "^4.4.1",
     "watchpack": "^2.3.1",
     "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0",
     "webpack-sources": "^3.2.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "dev": "cross-env NODE_ENV=development webpack serve --progress --hot --config webpack.config.js"
+    "build": "cross-env NODE_ENV=production webpack --progress --config webpack.build.js",
+    "dev": "cross-env NODE_ENV=development webpack serve --progress --hot --config webpack.dev.js"
   },
   "author": "what",
   "license": "ISC",
