@@ -21,6 +21,7 @@
     "caniuse-lite": "^1.0.30001311",
     "chrome-trace-event": "^1.0.3",
     "commander": "^2.20.3",
+    "cross-env": "^7.0.3",
     "cssnano": "^5.0.17",
     "electron-to-chromium": "^1.4.68",
     "enhanced-resolve": "^5.9.0",
@@ -35,6 +36,7 @@
     "glob-to-regexp": "^0.4.1",
     "graceful-fs": "^4.2.9",
     "has-flag": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
     "jest-worker": "^27.5.1",
     "json-parse-better-errors": "^1.0.2",
     "json-schema-traverse": "^0.4.1",
@@ -61,11 +63,13 @@
     "terser-webpack-plugin": "^5.3.1",
     "uri-js": "^4.4.1",
     "watchpack": "^2.3.1",
+    "webpack-dev-server": "^4.7.4",
     "webpack-sources": "^3.2.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "cross-env NODE_ENV=development webpack serve --progress --hot --config webpack.config.js"
   },
   "author": "what",
   "license": "ISC",
