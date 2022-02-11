@@ -3,7 +3,7 @@ Author: What (1310445488@qq.com)
 webpack.common.js (c) 2022
 Desc: description
 Created:  2022-02-11T05:53:54.324Z
-Modified: 2022-02-11T05:55:28.485Z
+Modified: 2022-02-11T06:04:27.795Z
 */
 
 const path = require("path");
@@ -53,6 +53,13 @@ module.exports = {
       {
         test: /\.xml$/i,
         use: ["xml-loader"],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+        },
       },
     ],
   },

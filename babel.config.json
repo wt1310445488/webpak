@@ -1,0 +1,11 @@
+/*
+Author: What (1310445488@qq.com)
+babel.config.json (c) 2022
+Desc: description
+Created:  2022-02-11T06:03:09.684Z
+Modified: 2022-02-11T06:05:04.718Z
+*/
+
+{
+  "presets": ["@babel/preset-env"]
+}
